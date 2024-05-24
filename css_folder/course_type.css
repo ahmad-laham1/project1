@@ -14,7 +14,7 @@ body {
 .container {
     text-align: center;
     width: 80%;
-    margin-top: 1000px; /* Adjusted for better positioning */
+    margin-top: 500%; /* Adjusted for better positioning */
 }
 
 header {
