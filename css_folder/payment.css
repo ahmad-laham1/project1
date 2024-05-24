@@ -1,0 +1,122 @@
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Payment page styling */
+.payment-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.payment-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.website-name {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.payment-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.payment-form .name-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.payment-form .form-group input {
+    width: calc(100% - 20px);
+    
+}
+
+.payment-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.payment-form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.payment-form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%;
+}
+
+.payment-form button:hover {
+    background-color: #575757;
+}
+
+.paypal-option {
+    margin-top: 20px;
+}
+
+.paypal-option p {
+    margin: 20px 0 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.paypal-button {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #0070ba;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%;
+}
+
+.paypal-button:hover {
+    background-color: #005ea6;
+}
+
+#first-name{
+    width: 80%;
+}
+
+#last-name{
+    width: 90%;
+}

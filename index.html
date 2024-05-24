@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopFit</title>
+    <link rel="stylesheet" href="css_folder/style.css">
+    <script src="https://kit.fontawesome.com/21fcd9817f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="photos/logo.jpeg" alt="" class="logo">
+            <h1 class="H1logo">TopFit</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home-section">Home</a></li>
+                    <li><a href="#about-section">About Us</a></li>
+                    <li style="display: none;"><a href="#team-section">Our Team</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li style="display: none;"><a href="#reviews-section">Reviews</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="sign_option.html">Sign Up</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home-section" class="home-section">
+        <div class="home-grid">
+            <div class="home-text">
+                <h2>Welcome to TopFit</h2>
+                <p>
+                    At TopFit, we are dedicated to helping you achieve your fitness goals.
+                    Whether you are just starting out or looking to take your training to the next level,
+                    we offer a variety of courses and personalized training plans to suit your needs.
+                </p>
+            </div>
+            <div class="home-image">
+                <img src="photos/home.png" alt="Fitness Image">
+            </div>
+        </div>
+    </section>
+
+    <section id="about-section" class="about-section">
+        <div class="about-grid">
+            <div class="about-image">
+                <img src="photos/about.png" alt="About Us Image">
+            </div>
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>
+                    TopFit is a premier fitness center that offers top-notch training programs and state-of-the-art facilities.
+                    Our team of experienced trainers is dedicated to providing personalized fitness plans tailored to your individual needs.
+                    Join us and become a part of our fitness community where we strive for excellence and continuous improvement.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="team-section" class="team-section">
+        <div class="team-content">
+            <h2>Our Team</h2>
+            <p>
+                Meet the dedicated and experienced team of trainers at TopFit. Our team is committed to helping you reach your fitness goals with personalized training and support.
+            </p>
+            <div class="card-deck">
+                <div class="card" style="background-image: url('photos/member1.png');">
+                    <div class="card-content">
+                        <h3>Omar Ghanem</h3>
+                        <p>Lead Trainer</p>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('photos/member2.png');">
+                    <div class="card-content">
+                        <h3>Mohammad Batayneh</h3>
+                        <p>Nutrition Expert</p>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('photos/member3.png');">
+                    <div class="card-content">
+                        <h3>Ahmad Alosta</h3>
+                        <p>Yoga Instructor</p>
+                    </div>
+                </div>
+            </div>
+            <button class="view-all-btn">View All</button>
+        </div>
+    </section>
+
+    <section id="courses" class="courses-section">
+        <div class="courses-content">
+            <h2>Our Courses</h2>
+            <p>
+                Explore our wide range of fitness courses designed to cater to all levels of experience. From high-intensity interval training to mindful yoga sessions, we have something for everyone. Discover the perfect course to match your fitness journey.
+            </p>
+            <div class="course">
+                <div class="course-image">
+                    <img src="photos/powerlifting.png" alt="Strength Training">
+                </div>
+                <div class="course-text">
+                    <h3>Strength Training</h3>
+                    <p>Build muscle, increase strength, and improve your overall fitness with our comprehensive strength training program.</p>
+                </div>
+            </div>
+            <div class="course">
+                <div class="course-image">
+                    <img src="photos/cardio.png" alt="Cardio Blast">
+                </div>
+                <div class="course-text">
+                    <h3>Cardio Blast</h3>
+                    <p>Get your heart pumping with our high-energy cardio workouts that will help you burn calories and boost stamina.</p>
+                </div>
+            </div>
+            <div class="course">
+                <div class="course-image">
+                    <img src="photos/yoga.png" alt="Yoga & Flexibility">
+                </div>
+                <div class="course-text">
+                    <h3>Yoga & Flexibility</h3>
+                    <p>Enhance your flexibility, balance, and peace of mind with our yoga classes suitable for all skill levels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Contact Us Section -->
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Fill out the form below to get in touch with us.</p>
+        <form action="#" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+    <section id="reviews-section" class="reviews-section">
+        <div class="reviews-content">
+            <h2>Reviews</h2>
+            <p>See what our clients have to say about their experiences at TopFit.</p>
+            <div class="reviews-slider">
+                <div class="review">
+                    <p>"TopFit has completely transformed my fitness routine. The trainers are knowledgeable and supportive!"</p>
+                    <div class="stars">★★★★★</div>
+                    <h3>- Alex Johnson</h3>
+                </div>
+                <div class="review">
+                    <p>"I love the variety of courses offered at TopFit. There's something for everyone, and the community is amazing."</p>
+                    <div class="stars">★★★★☆</div>
+                    <h3>- Maria Gonzalez</h3>
+                </div>
+                <div class="review">
+                    <p>"The personalized training plans have helped me achieve my goals faster than I ever thought possible."</p>
+                    <div class="stars">★★★★★</div>
+                    <h3>- Liam Smith</h3>
+                </div>
+                <div class="review">
+                    <p>"The personalized training plans have helped me achieve my goals faster than I ever thought possible."</p>
+                    <div class="stars">★★★★★</div>
+                    <h3>- Ahmad Laham</h3>
+                </div>
+            </div>
+            <div class="reviews-nav">
+                <button id="prevReview" class="nav-arrow">❮</button>
+                <button id="nextReview" class="nav-arrow">❯</button>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="photos/logo.jpeg" alt="TopFit Logo" style="width: 150px; height: auto;">
+            </div>
+            <div class="footer-about">
+                <h3>About TopFit</h3>
+                <p>
+                    TopFit is your go-to destination for all things fitness. From expert trainers to personalized workout plans, we're here to help you achieve your fitness goals.
+                </p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#home-section">Home</a></li>
+                    <li><a href="#about-section">About Us</a></li>
+                    <li><a href="#team-section">Our Team</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@topfit.com</p>
+                <p>Phone: +123 456 7890</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook" style="color: #0162ac;"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram" style="color: #ce2c4f;"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter" style="color: #000000;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TopFit. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+

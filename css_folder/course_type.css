@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #108389;
+    background-image: linear-gradient(336deg, #108389 17%, #021818 100%);
+    
+    background-attachment: fixed;
+}
+
+.container {
+    text-align: center;
+    width: 80%;
+    margin-top: 65%; /* Adjusted for better positioning */
+}
+
+header {
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo {
+    max-width: 100px;
+    margin-bottom: 0px;
+    border-radius: 100px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 50px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-shadow: 0 1px 1px 0 #000000;
+    
+}
+h2 {
+    font-size: 40px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-shadow: 0 1px 1px 0 #000000;
+    
+}
+.panel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+    overflow: hidden;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.panel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+}
+
+.powerlifting {
+    background-image: url('../photos/powerlifting.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+.bodybuilding {
+    background-image: url('../photos/bodybuilding_course.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-position-y: 12%;
+}
+
+.yoga {
+    background-image: url('../photos/yoga_course.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: top 50px;
+    background-position-y: 80%;
+}
+
+.fitness {
+    background-image: url('../photos/fitness.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position-y: 20%;
+}
+
+.panel:hover {
+    transform: scale(1.05);
+}
+
+a {
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    color: wheat;
+    font-size: 50px;
+}

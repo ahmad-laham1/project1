@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #108389;
+    background-image: linear-gradient(336deg, #108389 17%, #021818 100%);
+    background-attachment: fixed; /* Ensure the background stays fixed while scrolling */
+    background-size: cover; /* Make sure the background covers the entire area */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+}
+
+.container {
+    text-align: center;
+    width: 80%;
+    margin-top: 5%; /* Adjusted for better positioning */
+}
+
+header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 100px;
+    margin-bottom: 3px;
+    border-radius: 50px;
+    border-radius: 100px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 50px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.panel {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+    overflow: hidden;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.panel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+}
+
+.beginner {
+    background-image: url('../photos/beginner.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+}
+.beginner:hover{
+    color: #F8F4E1;
+}
+
+.intermediate {
+    background-image: url('../photos/intermediate.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+}
+.intermediate:hover{
+    color: #F8F4E1;
+}
+.advanced {
+    background-image: url('../photos/advanced.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+}
+.advanced:hover{
+    color: #F8F4E1;
+}
+
+.expert {
+    background-image: url('../photos/expert.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+}
+.expert:hover{
+    color: #F8F4E1;
+}
+.panel:hover {
+    transform: scale(1.05);
+}
+
+a {
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    color: wheat;
+    font-size: 40px;
+}

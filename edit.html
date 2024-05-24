@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="css_folder/edit.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="photos/logo.jpeg" alt="" class="logo">
+            <h1 class="H1logo">TopFit</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home-section">Home</a></li>
+                    <li><a href="#about-section">About Us</a></li>
+                    <li style="display: none;"><a href="#team-section">Our Team</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li style="display: none;"><a href="#reviews-section">Reviews</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="profile-container">
+            <h2>Edit Profile</h2>
+            <form action="submit_profile_update.php" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="trainee-picture">Profile Picture</label>
+                    <input type="file" id="trainee-picture" name="trainee-picture">
+                </div>
+                <div class="form-group">
+                    <label for="trainee-name">Name</label>
+                    <input type="text" id="trainee-name" name="trainee-name" value="Jane Doe">
+                </div>
+                <div class="form-group">
+                    <label for="trainee-gender">Gender</label>
+                    <select id="trainee-gender" name="trainee-gender">
+                        <option value="female" selected>Female</option>
+                        <option value="male">Male</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="trainee-country">Country</label>
+                    <input type="text" id="trainee-country" name="trainee-country" value="USA">
+                </div>
+                <div class="form-group">
+                    <label for="trainee-language">Language Spoken</label>
+                    <input type="text" id="trainee-language" name="trainee-language" value="English">
+                </div>
+                <div class="form-group">
+                    <label for="trainee-age">Age</label>
+                    <input type="number" id="trainee-age" name="trainee-age" value="28">
+                </div>
+                <div class="form-group">
+                    <label for="weight-loss">Weight Loss (lbs)</label>
+                    <input type="number" id="weight-loss" name="weight-loss" value="15">
+                </div>
+                <div class="form-group">
+                    <label for="muscle-gain">Muscle Gain (lbs)</label>
+                    <input type="number" id="muscle-gain" name="muscle-gain" value="5">
+                </div>
+                <div class="form-group">
+                    <label for="endurance-improvement">Endurance Improvement (%)</label>
+                    <input type="number" id="endurance-improvement" name="endurance-improvement" value="20">
+                </div>
+                <button type="submit" class="edit-button">Save Changes</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="photos/logo.jpeg" alt="TopFit Logo" style="width: 150px; height: auto;">
+                </div>
+                <div class="footer-about">
+                    <h3>About TopFit</h3>
+                    <p>TopFit is your go-to destination for all things fitness. From expert trainers to personalized workout plans, we're here to help you achieve your fitness goals.</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#home-section">Home</a></li>
+                        <li><a href="#about-section">About Us</a></li>
+                        <li><a href="#team-section">Our Team</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@topfit.com</p>
+                    <p>Phone: +123 456 7890</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook" style="color: #0162ac;"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram" style="color: #ce2c4f;"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter" style="color: #000000;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TopFit. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
